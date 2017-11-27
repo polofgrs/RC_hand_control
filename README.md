@@ -17,7 +17,7 @@ As you can see, the system can be very compact and easily fitted on top of a han
 * A jack female plug,
 * A jack-to-jack cable,
 * A PPM buddyboxing-capable RC transmitter (ex. FrSky),
-* An external battery (5 to 20V)
+* An external battery (5 to 12V)
 
 ### Prerequisites
 
