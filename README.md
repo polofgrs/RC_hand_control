@@ -29,7 +29,7 @@ You will need to connect the hardware as shown below :
 
 ![connexions](doc/img/wiring.jpg)
 
-[Upload](https://www.arduino.cc/en/Guide/Environment#toc9) the code([hand_control_ppm_mpu6050.ino](hand_control_ppm_mpu6050/hand_control_ppm_mpu6050.ino)) to the Arduino Board, you are ready to go !
+[Upload](https://www.arduino.cc/en/Guide/Environment#toc9) the code ([hand_control_ppm_mpu6050.ino](hand_control_ppm_mpu6050/hand_control_ppm_mpu6050.ino)) to the Arduino Board, you are ready to go !
 
 ## Using and testing the system
 
@@ -45,7 +45,7 @@ When in slave input mode, you should see the stick view moving on your screen as
 
 The system is working ! Yay !
 
-### Troubleshooting
+### Tuning and Troubleshooting
 
 * If the inputs aren't neutral when the system is flat, [Follow this tutorial](http://42bots.com/tutorials/arduino-script-for-mpu-6050-auto-calibration/) to calibrate the MPU6050 module.
 * To modify the angle ranges of the hand, look in the Arduino code for :
@@ -94,11 +94,14 @@ For Throttle, just switch the two left and right wires of the potentiometer.
 ```
 Change 980 (for min value) and 2020 (for max value) until reaching the desired range.
 
+After any modification to the Arduino code, you will have to upload it again in order for the update to be taken into account.
+
 ## Known issues and future developments
 
 * ISSUE : Yaw neutral position drifting : Due to the gyrometer behavior, the neutral position of yaw might drift quite a lot during flight. For now, you can disable the yaw trainer input in the RC model setup. Development is being made to cancel this drift with the use of a magnetometer in parallel. Stay tuned.
-* Design of PCB and 3D-printed case to hold the whole system so it can fit on your hand.
-* Use of Bluetooth or similar module to avoid using jack cable.
+* IMPROVEMENT : board and hardware (potentiometer) placement for single-hand use.
+* IMPROVEMENT : Design of PCB and 3D-printed case to hold the whole system so it can fit on your hand.
+* IMPROVEMENT : Use of Bluetooth or similar module to avoid using jack cable.
 
 ## Contacts and aknowledgements
 
